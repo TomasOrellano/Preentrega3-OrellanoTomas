@@ -1,0 +1,56 @@
+/* Estilos generales */
+body {
+    font-family: 'Montserrat', sans-serif;
+    background-color: #fafafa;
+    background-image: url('../Fixtures/fondo.png');
+    background-size: cover; /* Asegura que la imagen de fondo cubra todo */
+    margin: 0;
+    padding: 0;
+}
+
+.contenedor {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh; /* Centra verticalmente */
+}
+
+.seccion-formulario {
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Centra horizontalmente */
+    width: 100%;
+    max-width: 600px; /* Ancho máximo para la sección */
+    background: rgba(255, 255, 255, 0.9); /* Fondo blanco con opacidad */
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    box-sizing: border-box;
+}
+
+.mensaje-bienvenida {
+    text-align: center; /* Centra el mensaje de bienvenida */
+}
+
+.contenedor-titulo {
+    margin: 20px 0; /* Espaciado entre el título y el mensaje */
+}
+
+.contenedor-formulario {
+    width: 100%;
+}
+
+.grupo-botones {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px; /* Espacio entre botones y formulario */
+}
+
+.grupo-formulario {
+    margin-bottom: 20px; /* Espaciado entre los campos del formulario */
+};
+
+footer {
+    text-align: center; /* Centra el texto del pie de página */
+    margin-top: 20px;
+}

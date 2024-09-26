@@ -1,0 +1,170 @@
+/* General */
+body {
+    background-color: #e9e9e9;
+    background-repeat: no-repeat; /* Evita que la imagen se repita */
+    background-size: cover; /* Asegura que la imagen cubra todo el fondo */
+    background-position: center; /* Centra la imagen */
+    font-family: 'Montserrat', sans-serif;
+    margin: 0;
+    padding: 0;
+    color: #333; /* Puedes ajustar el color del texto aquí */
+}
+
+/* Navbar */
+.navbar {
+    background-color: #343a40; /* Color oscuro */
+}
+
+.navbar .navbar-brand {
+    font-size: 1.5rem;
+    color: #f8f9fa; /* Texto blanco */
+}
+
+.navbar .nav-link {
+    color: #f8f9fa; /* Texto blanco */
+    padding: 0.8rem;
+}
+
+.navbar .nav-link:hover {
+    color: #ffc107; /* Amarillo al pasar el mouse */
+}
+/* Sección Hero */
+.hero {
+    background-image: url('../Fixtures/mauri2.png');    
+    background-size: cover;
+    background-position: center;
+    height: 500px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative; /* Para la superposición */
+}
+
+/* Superposición de color */
+.hero::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.5); /* Superposición oscura */
+    z-index: 1; /* Mantener debajo del texto */
+}
+
+.texto-hero {
+    position: relative; /* Para posicionar encima de la superposición */
+    z-index: 2; /* Mantener encima de la superposición */
+    color: #fff; /* Color del texto */
+    text-align: center;
+}
+
+.texto-hero h1 {
+    font-size: 3rem; /* Aumentar tamaño del título */
+    margin-bottom: 10px; /* Espacio debajo del título */
+    text-shadow: 2px 2px 4px rgba(233, 233, 233, 0.7); /* Sombra para el título */
+}
+
+.texto-hero p {
+    font-size: 1.5rem; /* Tamaño del texto */
+}
+
+.texto-hero a {
+    margin-top: 20px;
+    padding: 10px 20px; /* Relleno para el botón */
+    background-color:  #333; /* Color de fondo del botón */
+    color: #b8b8b8; /* Color del texto del botón */
+    border-radius: 5px; /* Bordes redondeados del botón */
+    text-decoration: none; /* Sin subrayado */
+    font-weight: bold; /* Negrita para el texto del botón */
+}
+
+.texto-hero a:hover {
+    background-color: #ffffff; /* Color al pasar el mouse */
+}
+
+
+/* Sección de Estancias */
+.seccion-estancias h2, .seccion-genetica h2 {
+    margin-bottom: 30px;
+    background-color: rgba(167, 167, 167, 0.7); /* Fondo semi-transparente */
+    padding: 15px; /* Relleno alrededor del texto */
+    border-radius: 10px; /* Bordes redondeados */
+    font-size: 2rem; /* Aumentar tamaño del texto */
+    color: #fff; /* Color del texto blanco */
+    text-shadow: 1px 1px 2px rgba(168, 168, 168, 0.5); /* Sombra para mayor contraste */
+}
+
+/* Estilo para las imágenes */
+.seccion-estancias img, .seccion-genetica img {
+    border-radius: 10px; /* Bordes redondeados más sutiles */
+    box-shadow: 0 4px 8px rgba(129, 129, 129, 0.2); /* Sombra para las imágenes */
+}
+
+
+/* Sección de Genética */
+.seccion-genetica {
+    background-image: url('../Fixtures/toroexpo1.jpg'); /* Cambia esto a la ruta de tu imagen */
+    background-size: cover;
+    background-position: center;
+    position: relative; /* Para la superposición */
+    color: white; /* Color del texto */
+    padding: 50px 0;
+}
+
+/* Superposición de color */
+.seccion-genetica::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.5); /* Superposición oscura */
+    z-index: 1; /* Mantener debajo del texto */
+}
+
+.seccion-genetica .contenedor {
+    position: relative; /* Para posicionar encima de la superposición */
+    z-index: 2; /* Mantener encima de la superposición */
+    text-align: center; /* Centrar texto */
+}
+
+.seccion-genetica h2 {
+    font-size: 2.5rem; /* Tamaño del título */
+    margin-bottom: 20px; /* Espacio debajo del título */
+    text-shadow: 1px 1px 2px rgba(255, 255, 255, 0.7); /* Sombra para el título */
+}
+
+.seccion-genetica p {
+    font-size: 1.2rem; /* Tamaño del texto */
+    margin-bottom: 30px; /* Espacio debajo del párrafo */
+}
+
+
+
+/* Sección de Contacto */
+.seccion-contacto {
+    background-color: #343a40;
+    color: white;
+}
+
+.seccion-contacto p {
+    margin: 0;
+}
+
+/* Pie de Página */
+footer {
+    background-color: #a7a7a7;
+    padding: 20px;
+    text-align: center;
+    font-family: 'Arial', sans-serif;
+    font-size: 14px;
+}
+
+footer a {
+    text-decoration: none;
+    color: #000000;
+    font-weight: bold;
+}
+

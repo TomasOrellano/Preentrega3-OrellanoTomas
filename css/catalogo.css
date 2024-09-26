@@ -1,0 +1,65 @@
+/* Estilo general */
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f8f9fa;
+    color: #333;
+    background-image: url('../Fixtures/fondo.png');
+    background-size: cover; /* Ajusta la imagen para cubrir toda la pantalla */
+    background-position: center; /* Centra la imagen */
+    background-attachment: fixed; /* Mantiene la imagen fija cuando se hace scroll */
+    background-repeat: no-repeat; /* Evita que la imagen se repita */
+}
+
+/* Navbar */
+.navbar {
+    background-color: #343a40; /* Color oscuro */
+}
+
+.navbar .navbar-brand {
+    font-size: 1.5rem;
+    color: #f8f9fa; /* Texto blanco */
+}
+
+.navbar .nav-link {
+    color: #f8f9fa; /* Texto blanco */
+    padding: 0.8rem;
+}
+
+.navbar .nav-link:hover {
+    color: #8d8d8d; /* Amarillo al pasar el mouse */
+}
+
+/* Títulos del catálogo */
+h1, h2 {
+    color: #343a40; /* Color oscuro para los títulos */
+    font-weight: bold;
+}
+
+/* Carruseles */
+.carousel-inner img {
+    max-height: 500px;
+    object-fit: cover;
+}
+
+.carousel-indicators li {
+    background-color: #343a40; /* Indicadores oscuros */
+}
+
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+    background-color: #6b6b6b; /* Amarillo para los controles */
+}
+
+/* Footer */
+footer {
+    background-color: #6b6b6b; /* Fondo oscuro */
+    color: #f8f9fa; /* Texto blanco */
+}
+
+footer a {
+    color: #f8f9fa; /* Texto blanco */
+}
+
+footer a:hover {
+    color: #6b6b6b; /* Amarillo al pasar el mouse */
+}
