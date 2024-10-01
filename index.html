@@ -6,7 +6,6 @@
     <title>Cabaña San Ceferino</title>
     <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="css/index.css">
-    
 </head>
 <body>
     <div class="contenedor">
@@ -15,45 +14,45 @@
                 <h2>"CABAÑA SAN CEFERINO"</h2>
             </div>
             <div class="contenedor-formulario">
+           
                 <div class="grupo-botones" id="grupoBotones">
                     <button type="button" class="btn btn-outline-primary" onclick="mostrarFormulario()">Crear Cuenta</button>
                     <button type="button" class="btn btn-outline-secondary" onclick="mostrarFormulario()">Registrarse</button>
                 </div>
-                    <div class="grupo-formulario">
-                        <label for="usuario">NOMBRE DE USUARIO:</label>
-                        <input type="text" class="form-control" id="usuario" name="usuario" required>
-                    </div>
-                    <div class="grupo-formulario">
-                        <label for="name">NOMBRE Y APELLIDO:</label>
-                        <input type="text" class="form-control" id="name" name="name" required>
-                    </div>
-                    <div class="grupo-formulario">
-                        <label for="email">EMAIL:</label>
-                        <input type="email" class="form-control" id="email" name="email" required>
-                    </div>
-                    <div class="grupo-formulario">
-                        <label for="password">CONTRASEÑA:</label>
-                        <input type="password" class="form-control" id="password" name="password" required>
-                    </div>
-                    <button type="submit" class="btn btn-primary" onclick="window.location.href='../home.html'; return false;">REGISTRARSE</button>
-            
-            <footer class="mt-4">
-                <p><span>Tandil, Provincia de Buenos Aires, Argentina</span></p>
-                <p>Desde 2006</p>
-            </footer>
-            <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
-            <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
-            <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
-        
-            <script>
-                function mostrarFormulario() {
-                    // Ocultar los botones
-                    document.getElementById('grupoBotones').style.display = 'none';
-                    // Mostrar el formulario de registro
-                    document.getElementById('formularioRegistro').style.display = 'block';
-                }
-            </script>
+               
+                <div class="grupo-formulario">
+                    <label for="usuario">NOMBRE DE USUARIO:</label>
+                    <input type="text" class="form-control" id="usuario" name="usuario" required>
+                </div>
+                <div class="grupo-formulario">
+                    <label for="name">NOMBRE Y APELLIDO:</label>
+                    <input type="text" class="form-control" id="name" name="name" required>
+                </div>
+                <div class="grupo-formulario">
+                    <label for="email">EMAIL:</label>
+                    <input type="email" class="form-control" id="email" name="email" required>
+                </div>
+                <div class="grupo-formulario">
+                    <label for="password">CONTRASEÑA:</label>
+                    <input type="password" class="form-control" id="password" name="password" required>
+                </div>
+               
+                <button type="submit" class="btn btn-primary" onclick="window.location.href='../html/home.html'; return false;">REGISTRARSE</button>
+            </div>
         </div>
     </div>
+
+  
+    <footer class="mt-4">
+        <p><span>Tandil, Provincia de Buenos Aires, Argentina</span></p>
+        <p>Desde 2006</p>
+    </footer>
+
+   
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    
+    <script src="js/script.js"></script>
 </body>
 </html>
