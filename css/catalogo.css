@@ -32,6 +32,13 @@ h1, h2 {
 .carousel-inner img {
   max-height: 500px;
   object-fit: cover;
+  transition: transform 0.3s;
+  transform: scale 1.1;
+  filter: grayscale(100%);
+}
+.carousel-inner img:hover {
+  transform: scale(1.3);
+  filter: grayscale(0%);
 }
 
 .carousel-indicators li {

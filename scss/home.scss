@@ -4,7 +4,7 @@ $primary-color: #343a40; // Color oscuro principal
 $secondary-color: #6b6b6b; // Color secundario
 $accent-color: #ffc107; // Color de acento para hover
 $background-color-body: #e9e9e9; // Color de fondo del cuerpo
-$text-color: #333; // Color de texto
+$text-color: #ffffff; // Color de texto
 $hero-background-image: url('../Fixtures/mauri2.png'); // Imagen de fondo para la sección hero
 $genetic-background-image: url('../Fixtures/toroexpo1.jpg'); // Imagen de fondo para la sección genética
 $footer-background-color: #a7a7a7; // Color de fondo del footer
@@ -34,7 +34,7 @@ body {
 .navbar .nav-link {
   color: #f8f9fa; // Texto blanco
   padding: 0.8rem;
-  
+
   &:hover {
     color: $accent-color; // Amarillo al pasar el mouse
   }
@@ -94,9 +94,14 @@ body {
   }
 }
 
-// Sección de Estancias
+// Sección de Estancias y Genética
 .seccion-estancias,
 .seccion-genetica {
+  background-image: url('../Fixtures/fondoestablecimiento.jpg'); // Cambia la ruta a tu imagen de fondo
+  background-size: cover; // Asegura que la imagen cubra toda la sección
+  background-position: center; // Centra la imagen de fondo
+  background-repeat: no-repeat; // Evita que la imagen se repita
+
   h2 {
     margin-bottom: 30px;
     background-color: rgba(167, 167, 167, 0.7); // Fondo semi-transparente
@@ -110,6 +115,15 @@ body {
   img {
     border-radius: 10px; // Bordes redondeados más sutiles
     box-shadow: 0 4px 8px rgba(255, 255, 255, 0.2); // Sombra para las imágenes
+    width: 500px; // Aumenta el ancho inicial
+    height: 250px; // Aumenta la altura inicial
+    margin-bottom: 100px;
+    transition: transform 0.3s ease-in-out; // Transición para la animación
+    transform: scale(1.1); // Establecer el tamaño inicial un poco más grande
+  }
+
+  img:hover {
+    transform: scale(1.2); // Escalar imagen al pasar el mouse
   }
 }
 
@@ -141,7 +155,7 @@ body {
     h2 {
       font-size: 2.5rem; // Tamaño del título
       margin-bottom: 20px; // Espacio debajo del título
-      text-shadow: 1px 1px 2px rgba(255, 255, 255, 0.7); // Sombra para el título
+      text-shadow: 1px 1px 2px rgb(255, 255, 255); // Sombra para el título
     }
 
     p {
