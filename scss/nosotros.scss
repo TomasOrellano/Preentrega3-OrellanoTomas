@@ -1,0 +1,55 @@
+// Variables globales
+$font-family-base: 'Montserrat', sans-serif; // Tipografía base
+$background-color-body: #f8f9fa; // Color de fondo del cuerpo
+$background-color-footer: #f9f9f9; // Color de fondo del footer
+$color-link: #7c7c7c; // Color de los enlaces
+$color-link-hover: #000000; // Color de los enlaces al pasar el mouse
+$background-color-title: #ffffff; // Color de fondo del título
+$box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); // Sombra para los contenedores
+
+// Estilos generales
+body {
+    font-family: $font-family-base;
+    background-image: url('../Fixtures/fondo.png');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+}
+
+.jumbotron {
+    background-color: $background-color-body;
+    border-radius: 0;
+}
+
+.section-title {
+    margin: 40px 0;
+    background-color: $background-color-title;
+}
+
+.social-links a {
+    color: $color-link;
+    transition: color 0.3s ease;
+    background-color: $background-color-title; // Fondo blanco
+}
+
+.social-links a:hover {
+    color: $color-link-hover;
+    background-color: $background-color-title; // Fondo blanco
+}
+
+footer {
+    background-color: $background-color-footer;
+    padding: 20px;
+    text-align: center;
+    font-family: 'Arial', sans-serif;
+    font-size: 14px;
+}
+
+footer a {
+    text-decoration: none;
+    color: $color-link-hover; // Color negro
+    font-weight: bold;
+}

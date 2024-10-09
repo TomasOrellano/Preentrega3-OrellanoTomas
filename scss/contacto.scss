@@ -1,0 +1,105 @@
+// Variables globales
+$font-family-base: 'Montserrat', sans-serif; // Cambiamos a Montserrat
+$primary-color: #343a40; // Color principal (oscuro)
+$secondary-color: #6b6b6b; // Color secundario (más claro)
+$accent-color: #8d8d8d; // Color de acento para hover y detalles
+$background-color-body: #f8f9fa; // Fondo del cuerpo
+$text-color-body: #333; // Color de texto principal
+$link-color: #000000; // Color de enlaces
+$link-hover-color: $accent-color; // Color de enlaces al hacer hover
+$form-background: rgba(255, 255, 255, 0.9); // Fondo del formulario
+$form-shadow: rgba(0, 0, 0, 0.2); // Sombra del formulario
+
+// Estilo general
+body {
+  font-family: $font-family-base;
+  background-image: url('../Fixtures/fondo.png');
+  background-color: #a7a7a7; // Color de fondo alternativo
+  background-size: cover;
+  background-position: center;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+// Contenedor principal
+.padre {
+  width: 100%;
+  max-width: 500px;
+  background: $form-background;
+  padding: 20px;
+  box-shadow: 0px 0px 15px $form-shadow;
+  border-radius: 10px;
+  margin: 20px;
+}
+
+// Títulos
+h2 {
+  text-align: center;
+  color: $text-color-body; // Color de texto
+  margin-bottom: 20px;
+}
+
+// Etiquetas
+label {
+  display: block;
+  margin-bottom: 8px;
+  color: $secondary-color; // Color de texto de las etiquetas
+}
+
+// Inputs y textarea
+input,
+textarea {
+  width: 100%;
+  padding: 12px;
+  margin-bottom: 15px;
+  border: 1px solid #cccccc;
+  border-radius: 5px;
+  font-size: 16px;
+  box-sizing: border-box;
+}
+
+// Botón de envío
+input[type="submit"] {
+  background-color: $primary-color;
+  color: white;
+  border: none;
+  cursor: pointer;
+  font-size: 18px;
+  padding: 12px;
+  border-radius: 5px;
+  transition: background-color 0.3s ease;
+
+  &:hover {
+    background-color: $secondary-color; // Cambia a color secundario al pasar el mouse
+  }
+}
+
+// Footer
+footer {
+  text-align: center;
+  margin-top: 40px;
+  color: $link-color;
+
+  p {
+    margin: 5px 0;
+  }
+
+  .links {
+    margin-top: 20px;
+
+    a {
+      color: $link-color;
+      text-decoration: none;
+      margin: 0 5px;
+      transition: color 0.3s ease;
+
+      &:hover {
+        color: $link-hover-color; // Cambia al pasar el mouse
+      }
+    }
+  }
+}

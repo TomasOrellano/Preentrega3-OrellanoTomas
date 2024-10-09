@@ -1,44 +1,47 @@
 body {
-    font-family: 'Montserrat', sans-serif;
-    background-image: url('../Fixtures/fondo.png');
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-    text-align: center;
-    margin: 0;
-    padding: 0;
+  font-family: "Montserrat", sans-serif;
+  background-image: url("../Fixtures/fondo.png");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  text-align: center;
+  margin: 0;
+  padding: 0;
 }
 
 .jumbotron {
-    background-color: #f8f9fa;
-    border-radius: 0;
+  background-color: #f8f9fa;
+  border-radius: 0;
 }
 
 .section-title {
-    margin: 40px 0;
-    background-color: #ffffff;}
+  margin: 40px 0;
+  background-color: #ffffff;
+}
 
 .social-links a {
-    color: #7c7c7c;
-    transition: color 0.3s ease;
-    background-color: #ffffff;
+  color: #7c7c7c;
+  transition: color 0.3s ease;
+  background-color: #ffffff;
 }
 
 .social-links a:hover {
-    color: #000000;
-    background-color: #ffffff;
+  color: #000000;
+  background-color: #ffffff;
 }
 
 footer {
-    background-color: #f9f9f9;
-    padding: 20px;
-    text-align: center;
-    font-family: 'Arial', sans-serif;
-    font-size: 14px;
+  background-color: #f9f9f9;
+  padding: 20px;
+  text-align: center;
+  font-family: "Arial", sans-serif;
+  font-size: 14px;
 }
 
 footer a {
-    text-decoration: none;
-    color: #000000;
-    font-weight: bold;
+  text-decoration: none;
+  color: #000000;
+  font-weight: bold;
 }
+
+/*# sourceMappingURL=nosotros.css.map */

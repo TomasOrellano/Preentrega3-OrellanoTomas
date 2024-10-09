@@ -1,78 +1,83 @@
 body {
-    font-family: 'Montserrat', sans-serif;
-    background-image: url('../Fixtures/fondo.png');
-    background-color: #a7a7a7;
-    background-size: cover;
-    background-position: center;
-    margin: 0;
-    padding: 0;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
+  font-family: "Montserrat", sans-serif;
+  background-image: url("../Fixtures/fondo.png");
+  background-color: #a7a7a7;
+  background-size: cover;
+  background-position: center;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
 }
+
 .padre {
-    width: 100%;
-    max-width: 500px;
-    background: rgba(255, 255, 255, 0.9);
-    padding: 20px;
-    box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.2);
-    border-radius: 10px;
-    margin: 20px;
+  width: 100%;
+  max-width: 500px;
+  background: rgba(255, 255, 255, 0.9);
+  padding: 20px;
+  box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.2);
+  border-radius: 10px;
+  margin: 20px;
 }
+
 h2 {
-    text-align: center;
-    color: #333333;
-    margin-bottom: 20px;
+  text-align: center;
+  color: #333;
+  margin-bottom: 20px;
 }
+
 label {
-    display: block;
-    margin-bottom: 8px;
-    color: #555555;
+  display: block;
+  margin-bottom: 8px;
+  color: #6b6b6b;
 }
-input, textarea {
-    width: 100%;
-    padding: 12px;
-    margin-bottom: 15px;
-    border: 1px solid #cccccc;
-    border-radius: 5px;
-    font-size: 16px;
-    box-sizing: border-box;
+
+input,
+textarea {
+  width: 100%;
+  padding: 12px;
+  margin-bottom: 15px;
+  border: 1px solid #cccccc;
+  border-radius: 5px;
+  font-size: 16px;
+  box-sizing: border-box;
 }
-input[type="submit"] {
-    background-color: #333333;
-    color: white;
-    border: none;
-    cursor: pointer;
-    font-size: 18px;
-    padding: 12px;
-    border-radius: 5px;
-    transition: background-color 0.3s ease;
+
+input[type=submit] {
+  background-color: #343a40;
+  color: white;
+  border: none;
+  cursor: pointer;
+  font-size: 18px;
+  padding: 12px;
+  border-radius: 5px;
+  transition: background-color 0.3s ease;
 }
-input[type="submit"]:hover {
-    background-color: #555555;
+input[type=submit]:hover {
+  background-color: #6b6b6b;
 }
+
 footer {
-text-align: center;
-margin-top: 40px;
-color: #000000;
+  text-align: center;
+  margin-top: 40px;
+  color: #000000;
 }
-
 footer p {
-margin: 5px 0;
+  margin: 5px 0;
 }
-
 footer .links {
-margin-top: 20px;
+  margin-top: 20px;
+}
+footer .links a {
+  color: #000000;
+  text-decoration: none;
+  margin: 0 5px;
+  transition: color 0.3s ease;
+}
+footer .links a:hover {
+  color: #8d8d8d;
 }
 
-footer a {
-color: #000000;
-text-decoration: none;
-margin: 0 5px;
-transition: color 0.3s ease;
-}
-
-footer a:hover {
-color: #000000;
-}
+/*# sourceMappingURL=contacto.css.map */

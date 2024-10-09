@@ -1,0 +1,79 @@
+// Variables
+$font-family-base: 'Arial', sans-serif;
+$background-color-body: #f8f9fa;
+$text-color-body: #333;
+$navbar-bg-color: #343a40;
+$navbar-text-color: #f8f9fa;
+$navbar-hover-color: #8d8d8d;
+$title-color: #343a40;
+$carousel-indicator-bg-color: #343a40;
+$carousel-control-color: #6b6b6b;
+$footer-bg-color: #6b6b6b;
+$footer-text-color: #f8f9fa;
+$footer-hover-color: #6b6b6b;
+
+// Estilo general
+body {
+  font-family: $font-family-base;
+  background-color: $background-color-body;
+  color: $text-color-body;
+  background-image: url('../Fixtures/fondo.png');
+  background-size: cover; // Ajusta la imagen para cubrir toda la pantalla
+  background-position: center; // Centra la imagen
+  background-attachment: fixed; // Mantiene la imagen fija cuando se hace scroll
+  background-repeat: no-repeat; // Evita que la imagen se repita
+}
+
+// Navbar
+.navbar {
+  background-color: $navbar-bg-color; // Color oscuro
+
+  .navbar-brand {
+    font-size: 1.5rem;
+    color: $navbar-text-color; // Texto blanco
+  }
+
+  .nav-link {
+    color: $navbar-text-color; // Texto blanco
+    padding: 0.8rem;
+
+    &:hover {
+      color: $navbar-hover-color; // Amarillo al pasar el mouse
+    }
+  }
+}
+
+// Títulos del catálogo
+h1, h2 {
+  color: $title-color; // Color oscuro para los títulos
+  font-weight: bold;
+}
+
+// Carruseles
+.carousel-inner img {
+  max-height: 500px;
+  object-fit: cover;
+}
+
+.carousel-indicators li {
+  background-color: $carousel-indicator-bg-color; // Indicadores oscuros
+}
+
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+  background-color: $carousel-control-color; // Color oscuro para los controles
+}
+
+// Footer
+footer {
+  background-color: $footer-bg-color; // Fondo oscuro
+  color: $footer-text-color; // Texto blanco
+
+  a {
+    color: $footer-text-color; // Texto blanco
+
+    &:hover {
+      color: $footer-hover-color; // Cambia al pasar el mouse
+    }
+  }
+}

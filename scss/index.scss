@@ -1,0 +1,63 @@
+// Variables globales
+$font-family-base: 'Montserrat', sans-serif; // Tipografía base
+$background-color-body: #fafafa; // Color de fondo del cuerpo
+$form-background: rgba(255, 255, 255, 0.9); // Fondo del formulario
+$box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); // Sombra para los contenedores
+$border-radius: 8px; // Radio de borde
+
+// Estilos generales
+body {
+    font-family: $font-family-base;
+    background-color: $background-color-body;
+    background-image: url('../Fixtures/fondo.png');
+    background-size: cover; // Asegura que la imagen de fondo cubra todo
+    margin: 0;
+    padding: 0;
+}
+
+.contenedor {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh; // Centra verticalmente
+}
+
+.seccion-formulario {
+    display: flex;
+    flex-direction: column;
+    align-items: center; // Centra horizontalmente
+    width: 100%;
+    max-width: 600px; // Ancho máximo para la sección
+    background: $form-background; // Fondo blanco con opacidad
+    padding: 20px;
+    border-radius: $border-radius;
+    box-shadow: $box-shadow;
+    box-sizing: border-box;
+}
+
+.mensaje-bienvenida {
+    text-align: center; // Centra el mensaje de bienvenida
+}
+
+.contenedor-titulo {
+    margin: 20px 0; // Espaciado entre el título y el mensaje
+}
+
+.contenedor-formulario {
+    width: 100%;
+}
+
+.grupo-botones {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px; // Espacio entre botones y formulario
+}
+
+.grupo-formulario {
+    margin-bottom: 20px; // Espaciado entre los campos del formulario
+}
+
+footer {
+    text-align: center; // Centra el texto del pie de página
+    margin-top: 20px;
+}
