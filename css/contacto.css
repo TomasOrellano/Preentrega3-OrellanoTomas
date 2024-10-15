@@ -1,3 +1,4 @@
+@charset "UTF-8";
 body {
   font-family: "Montserrat", sans-serif;
   background-image: url("../Fixtures/fondo.png");
@@ -6,20 +7,20 @@ body {
   background-position: center;
   margin: 0;
   padding: 0;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  height: 100vh;
+  height: 100vh; /* Se mantiene para cubrir toda la pantalla */
+}
+
+header {
+  width: 100%; /* Asegurarse de que el navbar ocupe todo el ancho */
 }
 
 .padre {
-  width: 100%;
   max-width: 500px;
   background: rgba(255, 255, 255, 0.9);
   padding: 20px;
   box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.2);
   border-radius: 10px;
-  margin: 20px;
+  margin: 20px auto; /* Centrar el contenedor con margen automático */
 }
 
 h2 {
